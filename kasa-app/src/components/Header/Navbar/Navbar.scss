@@ -1,0 +1,14 @@
+@import '../../../styles/Variables';
+
+.nav-container {
+    border: 2px solid purple;
+    a {
+        border: 2px solid blue;
+        margin: 10px 0px 10px 15px;
+
+        @media (max-width: $breakpoint-mobile) {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+    }
+}

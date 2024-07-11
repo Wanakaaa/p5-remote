@@ -1,0 +1,25 @@
+@import './variables'; // Importer les variables
+
+
+body {
+    font-family: $fontFamily; // Appliquer la police Montserrat globalement
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    margin: 45px 100px 0px 100px;
+
+    @media (max-width: $breakpoint-mobile) {
+        color: blue; // Couleur des liens en mobile
+        margin: 20px;
+    }
+}

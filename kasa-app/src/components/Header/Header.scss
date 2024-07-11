@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.header-container {
+    border: 2px solid green;
+    @include flex(row, space-between, center);
+
+    @media (max-width: $breakpoint-mobile) {
+        .logoHeight {
+            width: 145px;
+            height: 46px;
+        }
+    }
+}
+

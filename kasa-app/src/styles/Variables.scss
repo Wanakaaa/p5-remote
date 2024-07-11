@@ -1,0 +1,23 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+$fontFamily: 'Montserrat', sans-serif;
+
+
+// Color
+$redColor: #FF6060;
+$blackColor: #000000;
+$whiteColor: #FFFFFF;
+$beigeColor: #F6F6F6;
+
+
+// Display :
+
+@mixin flex($direction, $justifyContent, $alignItem) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItem;
+}
+
+// Breakpoint 
+$breakpoint-mobile: 375px;
