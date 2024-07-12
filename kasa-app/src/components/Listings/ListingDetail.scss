@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.containerGeant {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgContainer {
+    height: 415px;
+    width: 100%;
+    border: 2px solid red;
+}
+
+.infoContainer {
+    display: flex;
+    border: 2px solid red;
+
+}
+
+.infologement{
+    border: 2px solid green;
+    width: 50%;
+}
+
+.infoAgent{
+    border: 2px solid greenyellow;
+    width: 50%;
+}
+
+.accordionLogement {
+    display: flex;
+    border: 2px solid red;
+
+}
+
+.descriptionLogement{
+    border: 2px solid pink;
+    width: 50%;
+}
+
+.equipementLogement{
+    border: 2px solid purple;
+    width: 50%;
+}

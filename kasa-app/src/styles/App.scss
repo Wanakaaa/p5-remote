@@ -17,7 +17,6 @@ body {
 main {
     min-width: 1240px;
     border: 2px solid orange;
-    display: flex;
     flex: 1; // Permet à main.main de s'étendre pour utiliser l'espace restant
     margin: 0px 100px 0px 100px;
     

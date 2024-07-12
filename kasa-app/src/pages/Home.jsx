@@ -1,8 +1,8 @@
 import React from 'react'
-import './Home.scss'
-import Banner from './Banner/Banner'
-import Listings from '../Listings/Listings'
-import bannerImage from "../../assets/bannerAbout.png"
+import '../components/Home/Home.scss'
+import Banner from '../components/Home/Banner/Banner'
+import Listings from '../components/Listings/Listings'
+import bannerImage from "../assets/bannerHome.png"
 
 function Home() {
   const bannerText= "Chez vous, partout et ailleurs"

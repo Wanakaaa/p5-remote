@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+.accordion-container {
+    border: 2px solid green;
+    padding: 5px;
+
+
+    .about-title{
+
+        border: 2px solid purple;
+        padding: 5px;
+        background: $redColor;
+        display: flex;
+        justify-content: space-between;
+    
+        img{
+            cursor: pointer;
+        }
+
+        .chevron {
+            transition: transform 0.5s ease;
+          }
+          
+            .chevron-rotated {
+                transform: rotate(-180deg);
+            }
+    }
+
+    p{
+        border: 2px solid blue;
+        background: brown;
+    }
+}
