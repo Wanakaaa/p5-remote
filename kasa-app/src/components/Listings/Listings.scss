@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+
+.listings-wrapper {
+    margin: 0 auto;
+    border: 2px solid purple;
+    background-color: $beigeColor;
+    border-radius: 25px;
+}
+
+.listings-container {
+    margin: 50px;
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.listing {
+    border: 2px solid green;
+    position: relative;
+    padding-top: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background: $redColor;
+}
+
+.listing img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.listing a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #333;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.listing a h2 {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    border-radius: 0 0 10px 10px;
+}

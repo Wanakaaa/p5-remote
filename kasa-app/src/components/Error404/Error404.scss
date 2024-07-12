@@ -1,0 +1,40 @@
+@import "../../styles/Variables.scss";
+
+.container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // Centre verticalement tout le contenu de main.main
+    align-items: center; // Centre horizontalement tout le contenu de main.main
+    flex: 1; // Permet à main.main de s'étendre pour utiliser l'espace restant
+    margin: 20px 100px; // Exemple de marges pour main.main
+}
+
+.error-404 {
+    border: 2px solid purple;
+    width: 100%;
+    flex: 1;
+    @include flex(column, center, center);
+
+    h1{
+        margin: 0;
+        border: 2px solid blue;
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 410.69px;
+        color: $redColor;
+    }
+    p{
+        border: 2px solid green;
+        color: $redColor;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 51.34px;
+    }
+    .returnHomeLink{
+        border: 2px solid red;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.67px;
+    }
+}

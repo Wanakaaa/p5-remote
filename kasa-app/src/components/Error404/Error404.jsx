@@ -1,8 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import './Error404.scss'
 
 function Error404() {
   return (
-    <div>Error404</div>
+    <section className='container'>
+      <section className='error-404'>
+        <h1>404</h1>
+        <p>Oups ! La page que vous demandez n'existe pas.</p>
+        <Link to="/" className='returnHomeLink'>Retourner sur la page d'accueil</Link>
+      </section>
+    </section>
   )
 }
 

@@ -1,25 +1,54 @@
 @import './variables'; // Importer les variables
 
-
 body {
-    font-family: $fontFamily; // Appliquer la police Montserrat globalement
+    font-family: $fontFamily; // Utilisation de la police Montserrat globalement
+    font-size: 16px;
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 .App {
+    min-width: 1240px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; // Assure que .App occupe au moins toute la hauteur de la vue
 }
 
-.main {
-    flex: 1;
-    margin: 45px 100px 0px 100px;
-
+main {
+    min-width: 1240px;
+    border: 2px solid orange;
+    display: flex;
+    flex: 1; // Permet à main.main de s'étendre pour utiliser l'espace restant
+    margin: 0px 100px 0px 100px;
+    
     @media (max-width: $breakpoint-mobile) {
         color: blue; // Couleur des liens en mobile
         margin: 20px;
     }
 }
+
+// body {
+//     font-family: $fontFamily; // Appliquer la police Montserrat globalement
+//     margin: 0;
+//     padding: 0;
+//     height: 100%;
+// }
+
+// .App {
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100vh;
+// }
+
+
+// .main {
+//     border: 2px solid orange;
+//     flex: 1;    
+//     margin: 20px 100px 20px 100px;
+//     align-items: center;
+//     justify-content: center;
+
+//     @media (max-width: $breakpoint-mobile) {
+
+//     }
+// }

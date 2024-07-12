@@ -10,15 +10,15 @@ import Error404 from './components/Error404/Error404';
 function App() {
   return (
     <div className='App'>
-      <div className="main">
         <Header />
+        <main>
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/About' element={<About />}/>
           <Route path='/listings/:id' element={<ListingDetail />}/>
           <Route path='*' element={<Error404 />} />
         </Routes>
-      </div>
+        </main>
         <Footer />
     </div>
   );
