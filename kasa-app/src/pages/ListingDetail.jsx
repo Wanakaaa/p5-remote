@@ -1,7 +1,9 @@
 import React from 'react'
 import listingData from '../datas/listListings.json'
+import '../components/Listings/ListingDetail.scss'
 import { useParams } from 'react-router-dom'
 import Tag from '../components/Listings/Tag'
+import Realtor from '../components/Listings/Realtor'
 
 function ListingDetail() {
   const {id} = useParams()
@@ -28,8 +30,9 @@ function ListingDetail() {
         </ul>
       </div>
       <div className='infoAgent'>
-        <p>info agent immo</p>
-        <p>staaaarzs</p>
+        <Realtor 
+        host={host}
+        rating={rating}/>
       </div>
       </div>
 
