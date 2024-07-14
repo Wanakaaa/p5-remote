@@ -4,6 +4,8 @@ import '../components/Listings/ListingDetail.scss'
 import { useParams } from 'react-router-dom'
 import Tag from '../components/Listings/Tag'
 import Realtor from '../components/Listings/Realtor'
+import Description from '../components/Listings/Description'
+import Equipments from '../components/Listings/Equipments'
 
 function ListingDetail() {
   const {id} = useParams()
@@ -37,8 +39,14 @@ function ListingDetail() {
       </div>
 
       <div className='accordionLogement'>
-        <div className='descriptionLogement'>Description</div>
-        <div className='equipementLogement'>Equipements</div>
+        <div className='descriptionLogement'>
+          <Description 
+          description={description}/>
+        </div>
+        <div className='equipementLogement'>
+          <Equipments 
+          equipments={equipments}/>
+        </div>
       </div>
 
 
