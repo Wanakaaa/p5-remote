@@ -6,6 +6,7 @@ import Tag from '../components/Listings/Tag'
 import Realtor from '../components/Listings/Realtor'
 import Description from '../components/Listings/Description'
 import Equipments from '../components/Listings/Equipments'
+import Slider from '../components/Listings/Slider/Slider'
 
 function ListingDetail() {
   const {id} = useParams()
@@ -17,7 +18,12 @@ function ListingDetail() {
 
   return (
     <div className='containerGeant'>
-      <div className='imgContainer'><img src={cover} alt="gallery" /></div>
+      <div className='imgContainer'>
+        <Slider 
+        pictures={pictures}
+        alt={title}
+        />
+      </div>
 
       <div className='infoContainer'>
       <div className='infologement'>

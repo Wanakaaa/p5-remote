@@ -1,0 +1,42 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* ou une autre largeur appropriée */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    width: 100%;
+    display: block;
+  }
+  
+  .slider .nav-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; /* taille appropriée pour les icônes */
+    height: 24px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .slider .prev-icon {
+    left: 10px; /* ajuster selon besoin */
+  }
+  
+  .slider .next-icon {
+    right: 10px; /* ajuster selon besoin */
+  }
+  
+  .slider .annotation {
+    position: absolute;
+    bottom: 10px; /* ajuster selon besoin */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px; /* ajuster selon besoin */
+  }

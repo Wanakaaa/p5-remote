@@ -4,8 +4,8 @@ function Equipments({equipments}) {
   return (
     <div>
         <div>Equipements</div>
-        <div>{equipments.map((equipment) => (
-            <li>{equipment}</li>
+        <div>{equipments.map((equipment, index) => (
+            <li key={index}>{equipment}</li>
         ))}</div>
     </div>
   )
