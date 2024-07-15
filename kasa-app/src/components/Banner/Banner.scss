@@ -1,11 +1,9 @@
-@import '../../../styles/variables';
+@import '../../styles/variables';
 
-.home-banner {
-    border: 2px solid green;
-    height: 223px;
+.banner {
     width: 100%;
+    height: 100%;
     position: relative;
-    text-align: center;
 
     img {
         height: 100%;
@@ -14,19 +12,28 @@
         border-radius: 25px;
     }
 
-    .home-banner-text {
+    .banner-text{
+        width: 100%;
         display: flex;
-        text-wrap: nowrap;
+        justify-content: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 700;
         color: white;
         text-shadow: -1px -1px 0 $blackColor,
                     1px -1px 0 $blackColor,
                     -1px 1px 0 $blackColor,
-                    1px 1px 0 $blackColor
+                    1px 1px 0 $blackColor;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+
+        .banner-text{
+            font-size: 1.5rem;
+            padding-left: 16px;
+        }
     }
 }

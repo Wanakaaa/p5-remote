@@ -1,20 +1,30 @@
 @import '../../styles/variables';
 
 .home-container {
-    border: 2px solid blue;
+    // outline: 12px dotted red;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flex(column, flex-start, normal);
     gap: 20px;
+
+    .banner-section{
+        height: 223px;
+        width: 100%;
+        // outline: 5px solid pink;
+    }
+
+    .listings-section{
+        // border: 5px solid pink;
+        background: $beigeColor;
+        border-radius: 25px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        .banner-section {
+            height: 111px;
+        }
+
+    }
 }
 
-.banner-section{
-    width: 100;
-    border: 2px solid red;
-    padding-top: 50px;
-}
 
-.listings-section{
-    border: 2px solid yellow;
 
-}

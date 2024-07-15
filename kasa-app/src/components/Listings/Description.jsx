@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function Description({description}) {
+function Description({ description }) {
   return (
-    <div>
-        <div className='title-description'>Description</div>
-        <div>{description}</div>
+    <div className='description-container'>
+      <p>{description}</p>
     </div>
-  )
+  );
 }
 
-export default Description
+export default Description;

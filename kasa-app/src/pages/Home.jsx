@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/Home/Home.scss'
-import Banner from '../components/Home/Banner/Banner'
+import Banner from '../components/Banner/Banner'
 import Listings from '../components/Listings/Listings'
 import bannerImage from "../assets/bannerHome.png"
 

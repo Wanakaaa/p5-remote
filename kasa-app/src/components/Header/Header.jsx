@@ -10,7 +10,7 @@ function Header() {
         <img 
         src={logoHeader} 
         alt='logo KASA' 
-        className='logoHeight'></img>
+        className='logo'></img>
         <Navbar/>
     </div>
   )

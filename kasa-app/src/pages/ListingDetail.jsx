@@ -7,12 +7,26 @@ import Realtor from '../components/Listings/Realtor'
 import Description from '../components/Listings/Description'
 import Equipments from '../components/Listings/Equipments'
 import Slider from '../components/Listings/Slider/Slider'
+import Collapse from '../components/Collapse/Collapse'
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 function ListingDetail() {
   const {id} = useParams()
+  const navigate = useNavigate()
   // Trouver l'annonce correspondant à l'ID dans les données
+  useEffect(() => {
+    // Inside useEffect to handle navigation properly
+    let listing = listingData.find(listing => listing.id === id);
+    if (!listing) {
+      navigate('/erreur404'); // Redirect if listing with given ID not found
+    }
+  }, [id, navigate]);
+
   let listing = listingData.find(listing => listing.id === id);
-  console.log(listing)
+  if (!listing) {
+    return null; // or loading state, because the useEffect will handle redirection
+  }
 
   const { title, cover, pictures, description, host, rating, location, equipments, tags } = listing;
 
@@ -46,12 +60,17 @@ function ListingDetail() {
 
       <div className='accordionLogement'>
         <div className='descriptionLogement'>
-          <Description 
-          description={description}/>
+          <Collapse 
+          title='Description'
+          contentComponent={Description}
+          contentProps={{description}}
+          />
         </div>
         <div className='equipementLogement'>
-          <Equipments 
-          equipments={equipments}/>
+          <Collapse
+          title='Equipements'
+          contentComponent={Equipments}
+          contentProps={{equipments}}/>
         </div>
       </div>
 

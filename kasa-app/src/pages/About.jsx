@@ -1,8 +1,9 @@
 import React from 'react';
-import Banner from '../components/Home/Banner/Banner'; 
+import Banner from '../components/Banner/Banner'; 
 import bannerImage from '../assets/bannerAbout.png'; 
 import '../components/About/About.scss';
-import AboutAccordion from "../components/About/AboutAccordion"
+import AboutItem from "../components/About/AboutItem"
+import Collapse from '../components/Collapse/Collapse';
 
 function About() {
   const aboutData = [
@@ -40,10 +41,11 @@ function About() {
       <section className='about-section'>
         <ul>
           {aboutData.map(({title, content}) => (
-            <AboutAccordion
+            <Collapse
             key={title}
             title={title}
-            content={content}
+            contentComponent={AboutItem}
+            contentProps={{content}}
               /> 
           ))}
         </ul>

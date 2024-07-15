@@ -1,9 +1,46 @@
 @import '../../styles/variables';
 
+// .about-container {
+//     .banner-section{
+//         height: 223px;
+//         width: 100%;
+//     }
+
+//     .about-section{
+
+//     }
+// }
 
 
-ul {
-    padding-left: 10%;
-    padding-right: 10%;
-    // border: 2px solid blue;
+// ul {
+//     padding-left: 10%;
+//     padding-right: 10%;
+//     // border: 2px solid blue;
+// }
+
+.about-container {
+    width: 100%;
+    @include flex(column, flex-start, normal);
+    gap: 20px;
+
+    .banner-section{
+        height: 223px;
+        width: 100%;
+        // outline: 5px solid pink;
+    }
+
+    .about-section{
+        border: 2px solid blue;
+        ul {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        .banner-section {
+            height: 111px;
+        }
+
+    }
 }

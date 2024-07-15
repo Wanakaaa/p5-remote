@@ -1,15 +1,31 @@
 @import '../../styles/variables';
 
 .header-container {
-    border: 2px solid green;
-    margin: 40px 100px 0px 100px;
-    @include flex(row, space-between, center);
+    outline: 2px solid purple;
+    max-width: 1240px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    @media (max-width: $breakpoint-mobile) {
-        .logoHeight {
+    .logo {
+        @media(max-width: $breakpoint-mobile) {
             width: 145px;
             height: 46px;
         }
     }
 }
 
+
+// .header-container {
+//     border: 2px solid green;
+//     margin: 40px 100px 0px 100px;
+//     @include flex(row, space-between, center);
+
+//     @media (max-width: $breakpoint-mobile) {
+//         .logoHeight {
+//             width: 145px;
+//             height: 46px;
+//         }
+//     }
+// }

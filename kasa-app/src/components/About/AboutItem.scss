@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+.collapse-container {
+    margin-bottom: 30px;
+    .collapse-title {
+        background: $redColor;
+        padding: 10px;
+        @include flex(row, space-between, center);
+        color: $whiteColor;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+
+
+// .accordion-container {
+//     border: 2px solid green;
+//     padding: 5px;
+
+
+//     .about-title{
+
+//         border: 2px solid purple;
+//         padding: 5px;
+//         background: $redColor;
+//         display: flex;
+//         justify-content: space-between;
+    
+//         img{
+//             cursor: pointer;
+//         }
+
+//         .chevron {
+//             transition: transform 0.5s ease;
+//           }
+          
+//             .chevron-rotated {
+//                 transform: rotate(-180deg);
+//             }
+//     }
+
+//     p{
+//         border: 2px solid blue;
+//         background: brown;
+//     }
+// }
