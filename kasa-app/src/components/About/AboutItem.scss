@@ -1,14 +1,10 @@
 @import '../../styles/variables';
 
-.collapse-container {
-    margin-bottom: 30px;
-    .collapse-title {
-        background: $redColor;
-        padding: 10px;
-        @include flex(row, space-between, center);
-        color: $whiteColor;
-        font-weight: 700;
-        font-size: 1.5rem;
+.about-container {
+    p {
+        padding: 20px;
+        margin: 0;
+        font-size: 1.125rem;
     }
 }
 

@@ -1,14 +1,14 @@
-import React from 'react'
-import './AboutItem.scss'
+// import React from 'react'
+// import './AboutItem.scss'
 
 
-function AboutItem({content}) {
+// function AboutItem({content}) {
 
-  return (
-    <div className='about-container'>
-      <p>{content}</p>
-    </div>
-  )
-}
+//   return (
+//     <div className='about-container'>
+//       <p>{content}</p>
+//     </div>
+//   )
+// }
 
-export default AboutItem
+// export default AboutItem

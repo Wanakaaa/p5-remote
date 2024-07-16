@@ -2,11 +2,12 @@ import React, { useState } from 'react'
 import chevron from '../../assets/chevron.svg';
 import "./Collapse.scss"
 
-function Collapse({ title, contentComponent: ContentComponent, contentProps }) {
+function Collapse({ title, content }) {
+// function Collapse({ title, contentComponent: ContentComponent, contentProps, content }) {
     const [isVisible, setIsVisible] = useState(false);
 
     const toggle = () => {
-      setIsVisible(!isVisible);
+        setIsVisible(!isVisible);
     };
 
     return (
@@ -20,9 +21,12 @@ function Collapse({ title, contentComponent: ContentComponent, contentProps }) {
                 className={`chevron ${isVisible ? 'chevron-rotated' : ''}`}
                 />
             </div>
-            {isVisible && <ContentComponent {...contentProps} />}
+            <div className={`collapse-content ${isVisible ? 'visible' : ''}`}>
+            {isVisible ? <p>{content}</p> : null}
+            </div>
         </div>
     );
     }
 
 export default Collapse;
+

@@ -4,8 +4,6 @@ import '../components/Listings/ListingDetail.scss'
 import { useParams } from 'react-router-dom'
 import Tag from '../components/Listings/Tag'
 import Realtor from '../components/Listings/Realtor'
-import Description from '../components/Listings/Description'
-import Equipments from '../components/Listings/Equipments'
 import Slider from '../components/Listings/Slider/Slider'
 import Collapse from '../components/Collapse/Collapse'
 import { useNavigate } from 'react-router-dom'
@@ -28,7 +26,7 @@ function ListingDetail() {
     return null; // or loading state, because the useEffect will handle redirection
   }
 
-  const { title, cover, pictures, description, host, rating, location, equipments, tags } = listing;
+  const { title, pictures, description, host, rating, location, equipments, tags } = listing;
 
   return (
     <div className='containerGeant'>
@@ -62,15 +60,17 @@ function ListingDetail() {
         <div className='descriptionLogement'>
           <Collapse 
           title='Description'
-          contentComponent={Description}
-          contentProps={{description}}
+          content={description}
           />
         </div>
         <div className='equipementLogement'>
           <Collapse
           title='Equipements'
-          contentComponent={Equipments}
-          contentProps={{equipments}}/>
+          content={equipments.map((equipment, index) => (
+            <li
+            key={index}>{equipment}</li>
+          ))}
+          />
         </div>
       </div>
 

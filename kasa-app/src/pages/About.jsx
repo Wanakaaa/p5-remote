@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../components/Banner/Banner'; 
 import bannerImage from '../assets/bannerAbout.png'; 
 import '../components/About/About.scss';
-import AboutItem from "../components/About/AboutItem"
+// import AboutItem from "../components/About/AboutItem"
 import Collapse from '../components/Collapse/Collapse';
 
 function About() {
@@ -44,8 +44,7 @@ function About() {
             <Collapse
             key={title}
             title={title}
-            contentComponent={AboutItem}
-            contentProps={{content}}
+            content={content}
               /> 
           ))}
         </ul>

@@ -1,13 +1,49 @@
 @import "../../styles/Variables.scss";
 
 .collapse-container {
-    outline: 2px solid pink;
+    margin-bottom: 30px;
+    // background: blue;
+    background: #FBFBFB;
+    border-radius: 5px;
+
+    .collapse-title {
+      border-radius: 5px;
+      font-size: 1.5rem;
+      background: $redColor;
+      padding: 5px 15px;
+      @include flex(row, space-between, center);
+      color: $whiteColor;
+      font-weight: 700;
+      line-height: 34.22px;
+    }
+
+    .chevron {
+      transition: transform 0.5s ease;
+    }
+  
+    .chevron-rotated {
+          transform: rotate(-180deg);
+      }
+
+      .collapse-content {
+        background: pink;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        p {
+          padding: 20px;
+          margin: 0;
+          font-size: 1.125rem;
+        }
+      }
+
+      .visible {
+        max-height: 500px;
+        opacity: 1;
+        color: blue;
+        background: pink;
+      }
+
 }
 
-.chevron {
-    transition: transform 0.5s ease;
-  }
 
-.chevron-rotated {
-        transform: rotate(-180deg);
-    }

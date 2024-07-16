@@ -15,12 +15,15 @@
     }
 
     @include flex(column, center, center);
+}
 
     @media (max-width: $breakpoint-mobile) {
+        .footer-container {
+            height: 209px;
+        }
         .footer-copyright {
             font-size: 0.75rem;
             margin: 0;
         }
     }
 
-}
