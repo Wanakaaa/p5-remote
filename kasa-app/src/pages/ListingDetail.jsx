@@ -29,41 +29,41 @@ function ListingDetail() {
   const { title, pictures, description, host, rating, location, equipments, tags } = listing;
 
   return (
-    <div className='containerGeant'>
-      <div className='imgContainer'>
+    <div className='listing-container'>
+      <div className='listing-picture'>
         <Slider 
         pictures={pictures}
         alt={title}
         />
       </div>
 
-      <div className='infoContainer'>
-      <div className='infologement'>
-        <h1>{title}</h1>
-        <h2>{location}</h2>
-        <ul>
-          {tags.map((tag, index) => (
-            <Tag 
-            key={index}
-            tag={tag}/>
-          ))}
-        </ul>
-      </div>
-      <div className='infoAgent'>
-        <Realtor 
-        host={host}
-        rating={rating}/>
-      </div>
+      <div className='listing-content'>
+        <div className='listing-info'>
+          <h1>{title}</h1>
+          <h2>{location}</h2>
+          <ul>
+            {tags.map((tag, index) => (
+              <Tag 
+              key={index}
+              tag={tag}/>
+            ))}
+          </ul>
+        </div>
+        <div className='listing-realtor'>
+          <Realtor 
+          host={host}
+          rating={rating}/>
+        </div>
       </div>
 
-      <div className='accordionLogement'>
-        <div className='descriptionLogement'>
+      <div className='listing-collapse'>
+        <div className='listing-description'>
           <Collapse 
           title='Description'
           content={description}
           />
         </div>
-        <div className='equipementLogement'>
+        <div className='listing-equipment'>
           <Collapse
           title='Equipements'
           content={equipments.map((equipment, index) => (

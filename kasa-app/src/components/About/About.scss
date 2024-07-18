@@ -20,13 +20,15 @@
 
 .about-container {
     width: 100%;
-    @include flex(column, flex-start, normal);
+    @include flex(column, space-around, normal);
     gap: 20px;
+    // border: 20px solid green;
+
 
     .banner-section{
         height: 223px;
         width: 100%;
-        // outline: 5px solid pink;
+        outline: 5px solid pink;
     }
 
     .about-section{
@@ -40,6 +42,13 @@
     @media (max-width: $breakpoint-mobile) {
         .banner-section {
             height: 111px;
+        }
+
+        .about-section {
+            ul {
+            width: 100%;
+            padding: 0;
+            }
         }
 
     }

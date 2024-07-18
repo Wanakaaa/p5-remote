@@ -1,58 +1,43 @@
 @import '../../styles/variables';
 
-.containerGeant {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 2px solid blue;
-    max-width: 1240px;
-}
+.listing-container {
+    border: 12px dotted blue;
+    width: 100%;
 
-.imgContainer {
-    max-height: 415px;
-    max-width: 1240px;
-    border: 2px solid red;
-    overflow: hidden;
 
-        img {
-            width: 100%;
-            height: auto;
-            max-height: 100%;
-            object-fit: cover;
+    .listing-picture {
+        border: 5px solid pink;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .listing-content {
+        border: 5px solid pink;
+        margin-bottom: 20px;
+        display: flex;
+        width: 100%;
+
+        .listing-info {
+            border: 2px solid blue;
+            width: 50%;
         }
+
+        .listing-realtor {
+            border: 2px solid blue;
+            width: 50%;
+        }
+    }
+
+    .listing-collapse {
+        width: 100%;
+        display: flex;
+
+        .listing-description {
+            width: 50%;
+        }
+
+        .listing-equipment {
+            width: 50%;
+        }
+    }
 }
-
-.infoContainer {
-    display: flex;
-    border: 2px solid red;
-
-}
-
-.infologement{
-    border: 2px solid green;
-    width: 50%;
-}
-
-.infoAgent{
-    border: 2px solid greenyellow;
-    width: 50%;
-}
-
-.accordionLogement {
-    display: flex;
-    border: 2px solid red;
-
-}
-
-.descriptionLogement{
-    border: 2px solid pink;
-    width: 50%;
-    background-color: blue;
-}
-
-.equipementLogement{
-    border: 2px solid purple;
-    width: 50%;
-    background-color: blue;
-}
-

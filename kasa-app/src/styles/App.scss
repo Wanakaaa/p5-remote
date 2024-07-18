@@ -15,6 +15,7 @@ body {
     @include flex(column, center, center);
     gap: 50px;
     min-height: 100vh; 
+    background-color: plum;
 
     header {
         width: 100%;
@@ -22,6 +23,7 @@ body {
         @include flex(row, center, center);
     }
     main {
+        display: flex;
         width: 100%;
         max-width: 1240px;
         border: 2px solid orange;

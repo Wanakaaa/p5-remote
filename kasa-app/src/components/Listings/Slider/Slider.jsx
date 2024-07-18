@@ -17,11 +17,14 @@ function Slider({pictures, title}) {
     setCurrentIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex +1))
   }
   return (
-    <div className='slider'>
+    <div className='slider-container'>
       <SliderItem 
       picture={pictures[currentIndex]}
       title={title}
+      // className='slider-item'
       />
+
+      {/* Si pictures.length est supérieur à 1 alors la condition est true. && veut dire ET et va permettre d'exécuter le code qui suit (si c'es true) */}
       {pictures.length > 1 && (
         <>
           <NavigationArrow 
@@ -46,16 +49,3 @@ function Slider({pictures, title}) {
 }
 
 export default Slider;
-
-    // <div className="slider">
-    //   <img src={pictures[currentIndex]} alt={title} />
-    //   {pictures.length > 1 && (
-    //     <>
-    //       <img src={ArrowLeft} alt="Previous" className="nav-icon prev-icon" onClick={handlePrev} />
-    //       <img src={ArrowRight} alt="Next" className="nav-icon next-icon" onClick={handleNext} />
-    //       <div className="annotation">
-    //         {currentIndex + 1} / {pictures.length}
-    //       </div>
-    //     </>
-    //   )}
-    // </div>

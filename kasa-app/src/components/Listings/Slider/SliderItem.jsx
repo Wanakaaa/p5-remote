@@ -2,7 +2,7 @@ import React from 'react'
 
 function SliderItem({picture, title}) {
   return (
-    <img 
+    <img
     src={picture} 
     alt={title}
     className='slider-item'></img>
