@@ -10,7 +10,7 @@ function Rating({countMax, value}) {
         <ul>
             {starsArray.map((type, index) => (
                 <li key={index}>
-                    <img 
+                    <img className='rating-img'
                     src={type === 'full' ? starFull : starEmpty} 
                     alt={type === 'full' ? 'full' : 'empty'} />
                 </li>

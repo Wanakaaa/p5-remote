@@ -3,7 +3,6 @@ import chevron from '../../assets/chevron.svg';
 import "./Collapse.scss"
 
 function Collapse({ title, content }) {
-// function Collapse({ title, contentComponent: ContentComponent, contentProps, content }) {
     const [isVisible, setIsVisible] = useState(false);
 
     const toggle = () => {
@@ -22,7 +21,7 @@ function Collapse({ title, content }) {
                 />
             </div>
             <div className={`collapse-content ${isVisible ? 'visible' : ''}`}>
-            {isVisible ? <p>{content}</p> : null}
+            {isVisible ? <p className='content-p'>{content}</p> : null}
             </div>
         </div>
     );

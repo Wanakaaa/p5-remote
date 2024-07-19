@@ -59,14 +59,14 @@ function ListingDetail() {
         </div>
       </div>
 
-      <div className='listing-collapse'>
-        <div className='listing-description'>
+      <div className='listing-collapse-container'>
+        <div className='listing-collapse'>
           <Collapse 
           title='Description'
           content={description}
           />
         </div>
-        <div className='listing-equipment'>
+        <div className='listing-collapse'>
           <Collapse
           title='Equipements'
           content={equipments.map((equipment, index) => (
