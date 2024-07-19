@@ -1,0 +1,95 @@
+@import '../../../styles/variables';
+
+.tag-item {
+    list-style: none;
+    height: 25px;
+    min-width: 115px;
+    padding: 5px;
+    background: $redColor;
+    color: $whiteColor;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;  
+    border: 2px solid saddlebrown; 
+}
+
+.realtor-container{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+    .realtor-item {
+        // width: 50%;
+        border: 2px solid yellow;
+        background-color: green;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        
+        .realtor-name {
+            border: 2px solid blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 1.125rem;
+        }
+
+        .realtor-picture {
+            border: 2px solid blue;
+            height: 64px;
+            width: 64px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    .realtor-rating {
+        // border: 2px solid blue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+
+
+        ul {
+            // border: 2px solid red;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 10px;
+            margin: 0;
+
+            li {
+                // outline: 1px solid pink;
+                display: flex;
+                justify-content: flex-end;
+                align-items: space-around;
+                
+                img {
+                    // border: 2px solid blue;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+        }
+    }
+}
+

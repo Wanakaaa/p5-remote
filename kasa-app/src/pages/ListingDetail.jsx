@@ -2,12 +2,13 @@ import React from 'react'
 import listingData from '../datas/listListings.json'
 import '../components/Listings/ListingDetail.scss'
 import { useParams } from 'react-router-dom'
-import Tag from '../components/Listings/Tag'
-import Realtor from '../components/Listings/Realtor'
+import Tag from '../components/Listings/Info/InfoTag'
+import Realtor from '../components/Listings/Info/InfoRealtor'
 import Slider from '../components/Listings/Slider/Slider'
 import Collapse from '../components/Collapse/Collapse'
 import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
+
 
 function ListingDetail() {
   const {id} = useParams()
@@ -39,8 +40,10 @@ function ListingDetail() {
 
       <div className='listing-content'>
         <div className='listing-info'>
-          <h1>{title}</h1>
-          <h2>{location}</h2>
+          <div>
+            <h1>{title}</h1>
+            <h2>{location}</h2>
+          </div>
           <ul>
             {tags.map((tag, index) => (
               <Tag 
