@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar/Navbar'
+import Navbar from './Navbar'
 import logoHeader from '../../assets/LogoHeader.png'
 import './Header.scss';
 
@@ -11,7 +11,9 @@ function Header() {
         src={logoHeader} 
         alt='logo KASA' 
         className='logo'></img>
-        <Navbar/>
+        <Navbar
+        className='nav'
+        />
     </div>
   )
 }

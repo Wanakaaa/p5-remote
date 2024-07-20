@@ -1,0 +1,38 @@
+@import './variables';
+
+.home-container {
+    outline: 12px dotted blue;
+    // width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+
+    // @include flex(column, flex-start, normal);
+    // gap: 20px;
+
+    .banner-section{
+        height: 223px;
+        width: 100%;
+        // border: 5px solid pink;
+    }
+
+    .listings-section{
+        border: 5px solid pink;
+        background: rgb(146, 192, 192);
+        // background: $beigeColor;
+        border-radius: 25px;
+    }
+
+    @media (max-width: $breakpoint-mobile) {
+        gap: 20px;
+
+        .banner-section {
+            height: 111px;
+        }
+
+    }
+}
+
+
+

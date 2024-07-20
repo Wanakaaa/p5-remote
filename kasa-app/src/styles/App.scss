@@ -11,39 +11,49 @@ body {
     padding: 0;
 }
 
-.App {
-    @include flex(column, center, center);
+.app {
+    // @include flex(column, center, center);
+    display: flex;
+    flex-direction: column;
     gap: 50px;
     min-height: 100vh; 
     background-color: plum;
 
     header {
-        width: 100%;
+        outline: 2px dotted red;
         margin: 45px 100px 0 100px;
-        @include flex(row, center, center);
+        // width: 100%;
+        // margin: 45px 100px 0 100px;
+        // @include flex(row, center, center);
     }
     main {
+        outline: 2px dotted red;
+        margin: 0 100px;
         display: flex;
-        width: 100%;
-        max-width: 1240px;
-        border: 2px solid orange;
+        // width: 100%;
+        // max-width: 1240px;
+        // border: 2px solid orange;
         flex: 1;
-        margin: 0px 100px;
+        // margin: 0px 100px;
     }
 
     footer {
-        width: 100%;
-        @include flex(row, center, center);
+        // width: 100%;
+        display: flex;
+        // @include flex(row, center, center);
     }
-    
-    @media (max-width: $breakpoint-mobile) {
-        .App {
-            margin: 20px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .app {
+        gap: 27px;
+        header {
+            margin: 20px 20px 0 20px;
         }
         
         main{
-            color: blue; // Couleur des liens en mobile
-            margin: 20px;
+            margin: 0 20px;
+            // border: 2px solid green;
         }
     }
 }

@@ -1,6 +1,7 @@
 @import '../../../styles/variables';
 
 .tag-item {
+    border: 2px solid yellow;
     list-style: none;
     height: 25px;
     min-width: 115px;
@@ -13,9 +14,9 @@
     justify-content: center;
     align-items: center;
     font-size: 0.875rem;  
-    border: 2px solid saddlebrown; 
 
     @media (max-width: $breakpoint-mobile) {
+        display: flex;
         height: 18px;
         min-width: 84px;
         font-size: 0.625rem;  

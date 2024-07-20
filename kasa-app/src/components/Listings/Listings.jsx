@@ -13,9 +13,9 @@ function Listings() {
                 title={title}
                 cover={cover}
                 className='listing-item'>
-                    <img src={cover} alt="cover" />
                     <Link to={`/listings/${id}`}>
-                        <h2>{title}</h2>
+                    <img src={cover} alt="cover" />
+                    <h2 className="listing-text">{title}</h2>
                     </Link>
                 </li>
             ))}

@@ -1,6 +1,6 @@
 import React from 'react'
 import listingData from '../datas/listListings.json'
-import '../components/Listings/ListingDetail.scss'
+import "../styles/ListingDetail.scss"
 import { useParams } from 'react-router-dom'
 import Tag from '../components/Listings/Info/InfoTag'
 import Realtor from '../components/Listings/Info/InfoRealtor'
@@ -40,7 +40,7 @@ function ListingDetail() {
 
       <div className='listing-content'>
         <div className='listing-info'>
-          <div>
+          <div className='listing-title-desc'>
             <h1>{title}</h1>
             <h2>{location}</h2>
           </div>
