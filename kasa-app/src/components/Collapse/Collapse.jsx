@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import chevron from '../../assets/chevron.svg';
 import "./Collapse.scss"
 
-function Collapse({ title, content }) {
+function Collapse({ title, content, className }) {
     const [isVisible, setIsVisible] = useState(false);
 
     const toggle = () => {
@@ -11,21 +11,19 @@ function Collapse({ title, content }) {
 
     return (
         <div className='collapse-container'>
-            <div className='collapse-title'>
-                <span>{title}</span>
-                <img
-                src={chevron}
-                alt='chevron'
+            <div className='collapse-title menu-btn_burger'>
+                <span className={`${className}`}>{title}</span>
+                <img 
+                src={chevron} 
+                alt="chevron"
                 onClick={toggle}
-                className={`chevron ${isVisible ? 'chevron-rotated' : ''}`}
-                />
+                className={`chevron ${isVisible ? 'chevron-rotated' : ''}`} />
             </div>
-            <div className={`collapse-content ${isVisible ? 'visible' : ''}`}>
-            {isVisible ? <p className='content-p'>{content}</p> : null}
+            <div className={`collapse-item ${isVisible ? 'dropdown-open' : 'dropdown-close'}`}>
+                {content}
             </div>
         </div>
     );
     }
 
 export default Collapse;
-

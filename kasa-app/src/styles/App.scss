@@ -12,35 +12,20 @@ body {
 }
 
 .app {
-    // @include flex(column, center, center);
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     gap: 50px;
     min-height: 100vh; 
-    background-color: plum;
 
     header {
-        outline: 2px dotted red;
         margin: 45px 100px 0 100px;
-        // width: 100%;
-        // margin: 45px 100px 0 100px;
-        // @include flex(row, center, center);
     }
     main {
-        outline: 2px dotted red;
         margin: 0 100px;
-        display: flex;
-        // width: 100%;
-        // max-width: 1240px;
-        // border: 2px solid orange;
-        // flex: 1;
-        // margin: 0px 100px;
+        @include flex(row);
     }
 
     footer {
-        // width: 100%;
-        display: flex;
-        // @include flex(row, center, center);
+        @include flex(row)
     }
 }
 
@@ -53,7 +38,6 @@ body {
         
         main{
             margin: 0 20px;
-            // border: 2px solid green;
         }
     }
 }
@@ -67,7 +51,6 @@ body {
         
         main{
             margin: 0 20px;
-            // border: 2px solid green;
         }
     }
 }

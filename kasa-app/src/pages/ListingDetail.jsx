@@ -64,11 +64,13 @@ function ListingDetail() {
           <Collapse 
           title='Description'
           content={description}
+          className="listing-title-collapse"
           />
         </div>
         <div className='listing-collapse'>
           <Collapse
-          title='Equipements'
+          className="listing-title-collapse"
+          title='Équipements'
           content={equipments.map((equipment, index) => (
             <li
             key={index}>{equipment}</li>

@@ -26,7 +26,7 @@
 
     .banner-text{
         width: 100%;
-        display: flex;
+        @include flex(row);
         justify-content: center;
         position: absolute;
         top: 50%;
@@ -49,6 +49,14 @@
     }
 
     @media (max-width: $breakpoint-mobile) {
+        img {
+            border-radius: 10px;
+        }
+
+        .banner-overlay {
+            border-radius: 10px;
+        }
+
         .banner-text{
             font-size: 1.5rem;
             padding-left: 16px;
@@ -56,6 +64,4 @@
             display: block;
         }
     }
-
-
 }

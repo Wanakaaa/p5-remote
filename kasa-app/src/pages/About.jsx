@@ -2,7 +2,6 @@ import React from 'react';
 import Banner from '../components/Banner/Banner'; 
 import bannerImage from '../assets/bannerAbout.png'; 
 import '../styles/About.scss';
-// import AboutItem from "../components/About/AboutItem"
 import Collapse from '../components/Collapse/Collapse';
 
 function About() {
@@ -45,6 +44,7 @@ function About() {
             key={title}
             title={title}
             content={content}
+            className="about-collapse"
               /> 
           ))}
         </ul>

@@ -1,32 +1,36 @@
 @import '../styles/variables';
 
 .about-container {
+    border: 4px solid green;
     width: 100%;
-    @include flex(column, space-around, normal);
+    @include flex(column);
+    justify-content: space-around;
     gap: 20px;
-    // border: 20px solid green;
-
 
     .banner-section{
         height: 223px;
         width: 100%;
-        outline: 5px solid pink;
     }
 
     .about-section{
-        border: 2px solid blue;
         ul {
             padding-left: 10%;
             padding-right: 10%;
-            display: flex;
+            @include flex(row);
             flex-direction: column;
             justify-content: space-around;
             align-items: normal;
             gap: 30px;
+
+
         }
     }
 
+
+
     @media (max-width: $breakpoint-mobile) {
+        height: 100%;    
+
         .banner-section {
             height: 111px;
         }
@@ -40,3 +44,4 @@
 
     }
 }
+

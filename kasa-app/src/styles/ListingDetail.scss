@@ -18,7 +18,6 @@
 
 
     .listing-content {
-        border: 5px solid pink;
         margin-bottom: 20px;
         display: flex;
         flex-direction: row;
@@ -28,15 +27,12 @@
         // width: 100%;
 
         .listing-info {
-            border: 2px solid green;
             width: 50%;
             display: flex;
             flex-direction: column;
             gap: 20px;
 
             .listing-title-desc {
-                border: 2px solid brown;
-
                 h1 {
                     display: flex;
                     flex-wrap: wrap;
@@ -52,12 +48,10 @@
             }
 
             ul {
-                border: 2px solid brown;
                 margin: 0;
                 padding: 0;
                 display: flex;
                 flex-wrap: wrap;
-                // @include flex(row, flex-start, center);
                 gap: 10px
             }
 
@@ -65,7 +59,6 @@
         }
 
         .listing-realtor {
-            border: 2px solid green;
             width: 50%;
             flex-grow: 1;
             display: flex;
@@ -75,7 +68,6 @@
     }
 
     .listing-collapse-container {
-        border: 5px solid pink;
         display: flex;
         justify-content: space-between;
         align-items: stretch;
@@ -93,8 +85,39 @@
         }
     }
 
+    @media (max-width: $breakpoint-medium) {
+        .listing-content{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .listing-info{
+                width: 100%;
+                gap: 10px;
+                .listing-title-desc {
+                    h1 {
+                        font-size: 1.125rem;
+                    }
+                    h2 {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+            .listing-realtor {
+
+                width: 100%;
+            }
+        }
+        .listing-collapse-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .listing-collapse {
+                width: 100%;
+            }
+        }
+    }
+
     @media (max-width: $breakpoint-mobile) {
-        background: rgb(148, 148, 130);
         .listing-content{
             display: flex;
             flex-direction: column;
@@ -125,46 +148,3 @@
         }
     }
 }
-//     @media (max-width: $breakpoint-mobile) {
-//         .listing-content {
-//             // border: 5px solid green;
-//             // background: yellow;
-//             display: flex;
-//             flex-direction: column;
-    
-//             .listing-info {
-//                 // border: 2px solid red;
-//                 display: flex;
-//                 flex-direction: column;
-//                 width: 100%;
-//                             gap: 20px;
-
-//                 h1 {
-//                     font-size: 1.125rem;
-//                 }
-
-//                 h2 {
-//                     font-size: 0.875rem;
-//                 }
-//             }
-
-//             .listing-realtor {
-//                 // border: 5px dotted red;
-//                 width: 100%;
-//             }
-//         }
-//         .listing-collapse-container {
-//             display: flex;
-//             flex-direction: column;
-//             align-items: flex-start;
-//             justify-content: space-between;
-//             // border: 5px solid purple;
-//             gap: 20px;
-
-//             .listing-collapse{
-//                 width: 100%;
-//             }
-//         }
-//     }
-// }
-
