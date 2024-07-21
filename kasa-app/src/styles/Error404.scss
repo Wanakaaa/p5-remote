@@ -1,9 +1,13 @@
-@import "../../styles/Variables.scss";
+@import "./Variables.scss";
 
 .error-container {
     border: 2px solid blue;
     width: 100%;
-    @include flex(column, space-around, center);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    // @include flex(column, space-around, center);
     text-align: center;
 
     h1 {
@@ -25,10 +29,8 @@
         font-size: 1.125rem;
         color: $blackColor;
     }
-}
 
-@media (max-width: $breakpoint-mobile) {
-    .error-container {
+    @media (max-width: $breakpoint-mobile) {
         h1 {
             font-size: 6rem;
         }
@@ -40,3 +42,12 @@
         }
     }
 }
+
+// @media (max-width: $breakpoint-mobile) {
+//     .error-container {
+//         h1 {
+//             font-size: 6rem;
+//         }
+
+//     }
+// }

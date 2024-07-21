@@ -13,7 +13,7 @@ function App() {
       <header>
         <Header />
       </header>
-      <main>
+      <main className='main-container'>
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/about' element={<About />}/>

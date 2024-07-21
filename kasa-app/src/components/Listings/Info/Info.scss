@@ -37,6 +37,7 @@
         // width: 50%;
         // border: 2px solid yellow;
         // background-color: green;
+        border: 2px solid brown;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -66,6 +67,8 @@
     }
 
     .realtor-rating {
+        border: 2px solid brown;
+        height: 100%;
         // border: 2px solid blue;
         display: flex;
         flex-direction: row;

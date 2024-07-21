@@ -95,7 +95,6 @@
 
     @media (max-width: $breakpoint-mobile) {
         background: rgb(148, 148, 130);
-        
         .listing-content{
             display: flex;
             flex-direction: column;
@@ -113,6 +112,14 @@
                 }
             }
             .listing-realtor {
+                width: 100%;
+            }
+        }
+        .listing-collapse-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .listing-collapse {
                 width: 100%;
             }
         }

@@ -12,12 +12,11 @@ $beigeColor: #F6F6F6;
 
 // Display :
 
-@mixin flex($direction, $justifyContent, $alignItem) {
+@mixin flex($direction) {
     display: flex;
     flex-direction: $direction;
-    justify-content: $justifyContent;
-    align-items: $alignItem;
 }
 
 // Breakpoint 
 $breakpoint-mobile: 375px;
+$breakpoint-medium: 768px;
