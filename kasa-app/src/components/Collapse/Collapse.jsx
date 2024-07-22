@@ -11,7 +11,7 @@ function Collapse({ title, content, className }) {
 
     return (
         <div className='collapse-container'>
-            <div className='collapse-title menu-btn_burger'>
+            <div className='collapse-title'>
                 <span className={`${className}`}>{title}</span>
                 <img 
                 src={chevron} 

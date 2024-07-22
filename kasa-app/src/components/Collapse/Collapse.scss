@@ -40,9 +40,11 @@
         background: aqua;
         padding: 10px;
         border-radius: 0 0 5px 5px;
+        // display: none;
     }
 
     .dropdown-open {
+        display: block;
         animation: open 0.3s ease-in-out forwards;
     }
 

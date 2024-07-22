@@ -1,8 +1,6 @@
 import React from 'react'
 import './Info.scss'
 import Rating from './Rating';
-import starEmpty from '../../../assets/StarEmpty.svg'
-import starFull from '../../../assets/StarFull.svg'
 
 function InfoRealtor({host, rating}) {
     const {name, picture} = host;
@@ -16,7 +14,7 @@ function InfoRealtor({host, rating}) {
               <div>{lastName}</div>
             </div>
             <div className='realtor-picture'>
-                <img src={picture} alt="agent immobilier" />
+                <img src={picture} alt={`agent immobilier: ${firstName} ${lastName}`} />
             </div>
         </div>
         <div className='realtor-rating'><Rating 

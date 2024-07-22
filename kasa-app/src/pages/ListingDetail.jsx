@@ -13,18 +13,19 @@ import { useEffect } from 'react'
 function ListingDetail() {
   const {id} = useParams()
   const navigate = useNavigate()
-  // Trouver l'annonce correspondant à l'ID dans les données
+
   useEffect(() => {
-    // Inside useEffect to handle navigation properly
     let listing = listingData.find(listing => listing.id === id);
     if (!listing) {
-      navigate('/erreur404'); // Redirect if listing with given ID not found
+      navigate('/erreur404');
     }
   }, [id, navigate]);
 
+
+  //Vérification supplémentaire
   let listing = listingData.find(listing => listing.id === id);
   if (!listing) {
-    return null; // or loading state, because the useEffect will handle redirection
+    return null;
   }
 
   const { title, pictures, description, host, rating, location, equipments, tags } = listing;

@@ -21,10 +21,7 @@ function Slider({pictures, title}) {
       <SliderItem 
       picture={pictures[currentIndex]}
       title={title}
-      // className='slider-item'
       />
-
-      {/* Si pictures.length est supérieur à 1 alors la condition est true. && veut dire ET et va permettre d'exécuter le code qui suit (si c'es true) */}
       {pictures.length > 1 && (
         <>
           <NavigationArrow 
