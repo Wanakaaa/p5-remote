@@ -1,7 +1,6 @@
 @import "../../styles/Variables.scss";
 
 .collapse-container {
-    border: 2px dotted blue;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -36,11 +35,13 @@
     .collapse-item {
         transform-origin: center top ;
         height: 100%;
-        // background: $beigeColor;
-        background: aqua;
-        padding: 10px;
+        background: $beigeColor;
+        padding: 25px 20px;
         border-radius: 0 0 5px 5px;
-        // display: none;
+    }
+
+    .hide {
+        display: none;
     }
 
     .dropdown-open {
@@ -78,188 +79,15 @@
     @media (max-width: $breakpoint-mobile) {
         .collapse-title {
             .about-collapse {
-                font-size: 0.8125rem;
+                font-size: 0.75rem;
             }
             .listing-title-collapse {
-                font-size: 0.8125rem;
+                font-size: 0.75rem;
             }
         }
         .collapse-item {
-            font-size: 0.8125rem
+            font-size: 0.75rem;
+            padding: 13px 20px;
         }
-
     }
-
 }
-
-
-
-//TEST
-
-
-// .collapse-container {
-//   border-radius: 5px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   width: 100%; // Assure que le conteneur prend la largeur disponible
-
-//   .collapse-title {
-//       border-radius: 5px;
-//       font-size: 1.5rem;
-//       background: $redColor;
-//       padding: 5px 15px;
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       color: $whiteColor;
-//       font-weight: 700;
-//       line-height: 34.22px;
-
-//       position: relative; // Pour gérer la position des éléments enfants
-//   }
-
-//   .chevron {
-//       cursor: pointer;
-//       transition: transform 0.5s ease;
-//   }
-
-//   .chevron-rotated {
-//       transform: rotate(-180deg);
-//   }
-
-//   .collapse-content {
-//       display: flex;
-//       flex-direction: column;
-//       overflow: hidden; // Cache le contenu excédentaire
-//       max-height: 0; // Hauteur initiale pour cacher le contenu
-//       opacity: 0; // Initialement invisible
-//       transform: scaleY(0); // Réduit verticalement
-//       transform-origin: top; // Origine de la transformation depuis le haut
-//       transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
-//       width: 100%; // Assure que le contenu occupe toute la largeur disponible
-
-//       p {
-        
-//           background: aqua;
-//           padding: 20px; // Padding pour le contenu visible
-//           margin: 0;
-//           font-size: 1.125rem;
-//           border-radius: 0 0 25px 25px;
-//       }
-//   }
-
-//   .collapse-content.visible {
-//       max-height: 500px; // Ajuste cette valeur selon le contenu ou utiliser une autre méthode
-//       opacity: 1;
-//       transform: scaleY(1); // Pleine échelle
-//   }
-// }
-
-
-
-//ANCIEN QUI MARCHE ::after@import "../../styles/Variables.scss";
-
-// .collapse-container {
-//     border-radius: 5px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: stretch;
-//     height: 100%;
-
-//     .collapse-title {
-//       border-radius: 5px;
-//       font-size: 1.5rem;
-//       background: $redColor;
-//       padding: 5px 15px;
-//       @include flex(row);
-//       justify-content: space-between;
-//       align-items: center;
-//       color: $whiteColor;
-//       font-weight: 700;
-//       line-height: 34.22px;
-//     }
-
-//     .chevron {
-//       transition: transform 0.5s ease;
-//     }
-  
-//     .chevron-rotated {
-//           transform: rotate(-180deg);
-//       }
-
-//       .collapse-content {
-//         display: flex;
-//         flex-direction: column;
-//         flex-grow: 1;
-        
-//         p {
-//           background: orange;
-//           padding: 20px;
-//           margin: 0;
-//           font-size: 1.125rem;
-//           flex-grow: 1;
-//           border-radius: 0 0 25px 25px ;
-//         }
-//       }
-
-//       .visible {
-//         opacity: 1;
-//         // color: blue;
-//         // background: pink;
-//       }
-// }
-// ^^^^^^
-
-
-// BYE ?
-// .collapse-container {
-//     border-radius: 5px;
-//     @include flex(row);
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     height: 100%;
-
-//     .collapse-title {
-//       border-radius: 5px;
-//       font-size: 1.5rem;
-//       background: $redColor;
-//       padding: 5px 15px;
-//       @include flex(row);
-//       justify-content: space-between;
-//       align-items: center;
-//       color: $whiteColor;
-//       font-weight: 700;
-//       line-height: 34.22px;
-//     }
-
-//     .chevron {
-//       transition: transform 0.5s ease;
-//       cursor: pointer;
-//     }
-  
-//     .chevron-rotated {
-//           transform: rotate(-180deg);
-//       }
-
-//       .collapse-content {
-//         @include flex(column);
-//         flex-grow: 1;
-
-        
-//         p {
-//           background: $beigeColor;
-//           padding: 20px;
-//           margin: 0;
-//           font-size: 1.125rem;
-//           flex-grow: 1;
-//           border-radius: 0 0 25px 25px ;
-//         }
-//       }
-
-//       .visible {
-//       }
-// }
-
-

@@ -19,7 +19,7 @@ function Collapse({ title, content, className }) {
                 onClick={toggle}
                 className={`chevron ${isVisible ? 'chevron-rotated' : ''}`} />
             </div>
-            <div className={`collapse-item ${isVisible ? 'dropdown-open' : 'dropdown-close'}`}>
+            <div className={`collapse-item hide ${isVisible ? 'dropdown-open' : 'dropdown-close'}`}>
                 {content}
             </div>
         </div>

@@ -45,11 +45,6 @@
                 @include flex(row);
                 align-items: center;
                 font-size: 1.125rem;
-                                    
-                // OU ALORS ? (on devrait pouvoir enlever la hauteur fixe comme ça)
-                // white-space: nowrap; 
-                // overflow: hidden;
-                // text-overflow: ellipsis;
             }
         }
     }

@@ -1,7 +1,6 @@
 @import '../styles/variables';
 
 .about-container {
-    border: 4px solid green;
     width: 100%;
     @include flex(column);
     justify-content: space-around;
@@ -21,12 +20,8 @@
             justify-content: space-around;
             align-items: normal;
             gap: 30px;
-
-
         }
     }
-
-
 
     @media (max-width: $breakpoint-mobile) {
         height: 100%;    

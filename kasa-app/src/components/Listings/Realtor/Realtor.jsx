@@ -1,8 +1,7 @@
 import React from 'react'
-import './Info.scss'
-import Rating from './Rating';
+import './Realtor.scss'
 
-function InfoRealtor({host, rating}) {
+function Realtor({host, rating}) {
     const {name, picture} = host;
     const [firstName, lastName] = name.split(' ');
 
@@ -17,13 +16,8 @@ function InfoRealtor({host, rating}) {
                 <img src={picture} alt={`agent immobilier: ${firstName} ${lastName}`} />
             </div>
         </div>
-        <div className='realtor-rating'><Rating 
-        countMax={5}
-        value={rating}
-        
-        /></div>
     </div>
   )
 }
 
-export default InfoRealtor
+export default Realtor

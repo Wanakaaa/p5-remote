@@ -18,6 +18,7 @@ body {
 
     header {
         margin: 45px 100px 0 100px;
+
     }
     main {
         margin: 0 100px;
@@ -55,3 +56,88 @@ body {
     }
 }
 
+
+// @import './variables';
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   font-family: $fontFamily;
+//   font-size: 16px;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .app {
+//   @include flex(column);
+//   gap: 50px;
+//   min-height: 100vh;
+
+//   header {
+//     margin: 45px 100px 0 100px; 
+//     padding: 0 20px;
+//     width: 100%;
+//     max-width: 1240px;
+//   }
+
+//   main {
+//     margin: 0 auto;
+//     padding: 0 20px;
+//     width: 100%;
+//     max-width: 1240px; 
+//   }
+
+//   footer {
+//     @include flex(row);
+//     width: 100%;
+//     padding: 0 20px;
+//   }
+// }
+
+// @media (min-width: 1440px) {
+//   .app {
+//     header, main {
+//       padding: 0; 
+//     }
+//     footer {
+//         padding: 0; 
+//       }
+//   }
+// }
+
+// // @media (max-width: $breakpoint-medium) {
+// //   .app {
+// //     gap: 27px;
+// //     header {
+// //       margin: 20px 20px 0 20px; 
+// //     }
+// //     main {
+// //       margin: 0 20px;
+// //     }
+// //   }
+// // }
+
+// @media (max-width: $breakpoint-mobile) {
+//   .app {
+//     gap: 27px;
+//     header {
+//       margin: 20px 20px 0 20px; 
+//     }
+//     main {
+//       margin: 0;
+//     }
+//   }
+// }
+
+// //     .app {
+// //         gap: 27px;
+// //         header {
+// //             margin: 20px 20px 0 20px;
+// //         }
+        
+// //         main{
+// //             margin: 0 20px;
+// //         }
+// //     }

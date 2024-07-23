@@ -1,4 +1,5 @@
 import React from 'react'
+import './Rating.scss'
 import starEmpty from '../../../assets/StarEmpty.svg'
 import starFull from '../../../assets/StarFull.svg'
 
@@ -7,9 +8,9 @@ function Rating({countMax, value}) {
         index < value ? 'full' : 'empty')
 
   return (
-        <ul>
+        <ul className='rating-container'> 
             {starsArray.map((type, index) => (
-                <li key={index}>
+                <li className='rating-stars' key={index}>
                     <img className='rating-img'
                     src={type === 'full' ? starFull : starEmpty} 
                     alt={type === 'full' ? 'full' : 'empty'} />
