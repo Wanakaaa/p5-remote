@@ -1,36 +1,28 @@
-@import "./Variables.scss";
-
 .error-container {
-    border: 2px solid blue;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     justify-content: space-around;
     align-items: center;
-    // @include flex(column, space-around, center);
     text-align: center;
 
     h1 {
         margin: 0;
-        border: 2px solid pink;
         font-size: 18rem;
         color: $redColor;
     }
 
     p {
         margin: 0;
-        border: 2px solid pink;
         font-size: 2.25rem;
         color: $redColor;
     }
 
     a {
-        border: 2px solid pink;
         font-size: 1.125rem;
         color: $blackColor;
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @include mobile {
         h1 {
             font-size: 6rem;
         }
@@ -42,12 +34,3 @@
         }
     }
 }
-
-// @media (max-width: $breakpoint-mobile) {
-//     .error-container {
-//         h1 {
-//             font-size: 6rem;
-//         }
-
-//     }
-// }

@@ -1,6 +1,5 @@
 import React from 'react'
 import listingData from '../datas/listListings.json'
-import "../styles/ListingDetail.scss"
 import { useParams } from 'react-router-dom'
 import Tags from '../components/Listings/Tags/Tags'
 import Realtor from '../components/Listings/Realtor/Realtor'

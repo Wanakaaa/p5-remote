@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import chevron from '../../assets/chevron.svg';
-import "./Collapse.scss"
 
 function Collapse({ title, content, className }) {
     const [isVisible, setIsVisible] = useState(false);

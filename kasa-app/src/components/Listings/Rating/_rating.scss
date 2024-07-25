@@ -1,8 +1,5 @@
-@import '../../../styles/variables';
-
 .rating-container {
-    // border: 2px solid red;
-    display: flex;
+    @include flex(row);
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,7 +7,7 @@
     .rating-stars {
         width: 36px;
         height: 36px;
-        display: flex;
+        @include flex(row);
         justify-content: center;
         align-items: center;
         gap: 4px;
@@ -20,7 +17,7 @@
         }
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @include mobile {
         .rating-stars {
             width: 18px;
             height: 18px;

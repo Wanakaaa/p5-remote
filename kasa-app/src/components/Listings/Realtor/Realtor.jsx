@@ -1,5 +1,4 @@
 import React from 'react'
-import './Realtor.scss'
 
 function Realtor({host, rating}) {
     const {name, picture} = host;

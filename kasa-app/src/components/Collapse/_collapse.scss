@@ -1,12 +1,11 @@
 @import "../../styles/Variables.scss";
 
 .collapse-container {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     height: 100%;
 
     .collapse-title {
-        display: flex;
+        @include flex(row);
         justify-content: space-between;
         background: $redColor;
         color: $whiteColor;
@@ -49,9 +48,9 @@
         animation: open 0.3s ease-in-out forwards;
     }
 
-    .dropdown-close{
-        animation: close 0.3s ease-in-out forwards;
-    }
+    // .dropdown-close{
+    //     animation: close 0.3s ease-in-out forwards;
+    // }
 
     @keyframes open{
         0%{
@@ -64,25 +63,25 @@
         }
     }
     
-    @keyframes close{
-        0% {
-            transform: scaleY(1);
-            max-height: 300px;
-        }
-        100%{
-            transform: scaleY(0);
-            max-height: 0px;
-        }
-    }
+    // @keyframes close{
+    //     0% {
+    //         transform: scaleY(1);
+    //         max-height: 300px;
+    //     }
+    //     100%{
+    //         transform: scaleY(0);
+    //         max-height: 0px;
+    //     }
+    // }
 
 
-    @media (max-width: $breakpoint-mobile) {
+    @include mobile {
         .collapse-title {
             .about-collapse {
-                font-size: 0.75rem;
+                font-size: 0.8125rem;
             }
             .listing-title-collapse {
-                font-size: 0.75rem;
+                font-size: 0.8125rem;
             }
         }
         .collapse-item {

@@ -1,5 +1,4 @@
 import React from 'react'
-import './Tags.scss'
 
 function Tags({tags}) {
   return (

@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
 import logoHeader from '../../assets/LogoHeader.png'
-import './Header.scss';
 import { Link } from 'react-router-dom';
 
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import logoFooter from '../../assets/LogoFooter.png'
-import './Footer.scss';
 
 function Footer() {
     const copyright = '© 2020 Kasa. All rights reserved'

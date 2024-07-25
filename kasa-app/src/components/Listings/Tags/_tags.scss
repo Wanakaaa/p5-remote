@@ -1,9 +1,7 @@
-@import '../../../styles/variables';
-
 .tags-container {
     margin: 0;
     padding: 0;
-    display: flex;
+    @include flex(row);
     justify-content: flex-start;
     gap: 10px;
 
@@ -17,16 +15,15 @@
         color: $whiteColor;
         font-weight: 700;
         border-radius: 10px;
-        display: flex;
+        @include flex(row);
         justify-content: center;
         align-items: center;
         font-size: 0.875rem;  
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @include mobile {
         .tag-item{
-        display: flex;
-        flex-direction: row;
+        @include flex(row);
         height: 18px;
         min-width: 84px;
         font-size: 0.625rem;

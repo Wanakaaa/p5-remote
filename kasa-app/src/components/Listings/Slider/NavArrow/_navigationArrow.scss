@@ -1,0 +1,18 @@
+.nav-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    height: 20%;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .prev-icon {
+    left: 20px;
+  }
+  
+  .next-icon {
+    right: 20px;
+  }
+  

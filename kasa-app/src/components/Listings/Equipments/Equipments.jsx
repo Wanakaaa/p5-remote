@@ -1,5 +1,4 @@
 import React from 'react';
-import './Equipments.scss';
 
 function Equipments({ equipments }) {
   return (

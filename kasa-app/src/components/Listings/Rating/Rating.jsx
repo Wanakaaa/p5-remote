@@ -1,5 +1,4 @@
 import React from 'react'
-import './Rating.scss'
 import starEmpty from '../../../assets/StarEmpty.svg'
 import starFull from '../../../assets/StarFull.svg'
 

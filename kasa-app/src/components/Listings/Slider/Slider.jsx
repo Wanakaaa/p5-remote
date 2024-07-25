@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import ArrowRight from '../../../assets/ArrowRight.svg'
 import ArrowLeft from '../../../assets/ArrowLeft.svg'
-import './Slider.scss'
-import SliderItem from './SliderItem'
-import NavigationArrow from './NavigationArrow'
-import Annotation from './Annotation'
+import SliderItem from './SliderItem/SliderItem'
+import NavigationArrow from './NavArrow/NavigationArrow'
+import Annotation from './Annotation/Annotation'
 
 function Slider({pictures, title}) {
   const [currentIndex, setCurrentIndex] = useState(0)

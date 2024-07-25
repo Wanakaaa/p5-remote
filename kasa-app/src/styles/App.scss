@@ -1,15 +1,25 @@
 @import './variables'; 
+@import './mixins';
+@import './base';
+@import '../pages/about';
+@import '../pages/error404';
+@import '../pages/home';
+@import '../pages/listingDetail';
+@import '../components/Banner/banner';
+@import '../components/Collapse/collapse';
+@import '../components/Footer/footer';
+@import '../components/Header/Header.scss';
+@import '../components/Listings/Equipments/equipments';
+@import '../components/Listings/Rating/rating';
+@import '../components/Listings/Realtor/realtor';
+@import '../components/Listings/Slider/slider';
+@import '../components/Listings/Slider/SliderItem/sliderItem';
+@import '../components/Listings/Slider/Annotation/annotation';
+@import '../components/Listings/Slider/NavArrow/navigationArrow';
+@import '../components/Listings/Tags/tags';
+@import '../components/Listings/listings';
 
-* {
-    box-sizing: border-box;
-  }
 
-body {
-    font-family: $fontFamily; 
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
 
 .app {
     @include flex(column);
@@ -55,89 +65,3 @@ body {
         }
     }
 }
-
-
-// @import './variables';
-
-// * {
-//   box-sizing: border-box;
-// }
-
-// body {
-//   font-family: $fontFamily;
-//   font-size: 16px;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// .app {
-//   @include flex(column);
-//   gap: 50px;
-//   min-height: 100vh;
-
-//   header {
-//     margin: 45px 100px 0 100px; 
-//     padding: 0 20px;
-//     width: 100%;
-//     max-width: 1240px;
-//   }
-
-//   main {
-//     margin: 0 auto;
-//     padding: 0 20px;
-//     width: 100%;
-//     max-width: 1240px; 
-//   }
-
-//   footer {
-//     @include flex(row);
-//     width: 100%;
-//     padding: 0 20px;
-//   }
-// }
-
-// @media (min-width: 1440px) {
-//   .app {
-//     header, main {
-//       padding: 0; 
-//     }
-//     footer {
-//         padding: 0; 
-//       }
-//   }
-// }
-
-// // @media (max-width: $breakpoint-medium) {
-// //   .app {
-// //     gap: 27px;
-// //     header {
-// //       margin: 20px 20px 0 20px; 
-// //     }
-// //     main {
-// //       margin: 0 20px;
-// //     }
-// //   }
-// // }
-
-// @media (max-width: $breakpoint-mobile) {
-//   .app {
-//     gap: 27px;
-//     header {
-//       margin: 20px 20px 0 20px; 
-//     }
-//     main {
-//       margin: 0;
-//     }
-//   }
-// }
-
-// //     .app {
-// //         gap: 27px;
-// //         header {
-// //             margin: 20px 20px 0 20px;
-// //         }
-        
-// //         main{
-// //             margin: 0 20px;
-// //         }
-// //     }

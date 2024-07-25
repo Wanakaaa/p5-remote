@@ -1,0 +1,85 @@
+.listing-container {
+    width: 100%;
+    @include flex(column);
+    gap: 15px;
+
+    .listing-picture {
+        margin-bottom: 20px;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .listing-content {
+        @include flex(row);
+
+        .listing-info {
+            width: 50%;
+            @include flex(column);
+            justify-content: space-between;
+            gap: 20px;
+            .listing-header {
+                h1 {
+                    @include flex(row);
+                    flex-wrap: wrap;
+                    margin: 0;
+                    color: $redColor;
+                    font-size: 2.25rem;
+                }
+                h2 {
+                    margin: 0;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+
+        .listing-details {
+            width: 50%;
+            @include flex(column);
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+
+    .listing-collapse-container {
+        @include flex(row);
+        justify-content: space-between;
+        
+        .listing-collapse {
+            width: 45%;
+        }
+    }
+
+    @include mobile {       
+        .listing-content{
+            @include flex(column);
+            gap: 16px;
+            .listing-info {
+                width: 100%;
+                gap: 10px;
+                .listing-header {
+                    @include flex(column);
+                    gap: 5px;
+                        h1 {
+                            font-size: 1.125rem;
+                        }
+                        h2 {
+                            font-size: 0.875rem;
+                        }
+                    }
+            }
+            .listing-details {
+                width: 100%;
+                @include flex(row);
+                flex-direction: row-reverse;
+                align-items: center;
+            }
+        }
+        .listing-collapse-container {
+            @include flex(column);
+            gap: 20px;
+            .listing-collapse {
+                width: 100%;
+            }
+        }
+    }
+}

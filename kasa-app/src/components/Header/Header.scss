@@ -1,13 +1,11 @@
-@import '../../styles/variables';
-
 .header-container {
     width: 100%;
-    display: flex;
+    @include flex(row);
     justify-content: space-between;
     align-items: normal;
 
     .nav {
-        display: flex;
+        @include flex(row);
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
@@ -22,7 +20,7 @@
         }
     }
     
-    @media(max-width: $breakpoint-mobile) {
+    @include mobile {
         
         .logo {
             // border: 2px solid blue;

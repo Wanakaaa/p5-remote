@@ -1,5 +1,3 @@
-@import '../../styles/variables';
-
 .banner {
     width: 100%;
     height: 100%;
@@ -34,21 +32,21 @@
         transform: translate(-50%, -50%);
         font-size: 3rem;
         font-weight: 700;
-        color: white;
+        color: $whiteColor;
         text-shadow: -1px -1px 0 $blackColor,
                     1px -1px 0 $blackColor,
                     -1px 1px 0 $blackColor,
                     1px 1px 0 $blackColor;
     }
 
-    @media (max-width: $breakpoint-medium) {
+    @include medium {
         .banner-text{
             font-size: 1.8rem;
             padding-left: 16px;
         }
     }
 
-    @media (max-width: $breakpoint-mobile) {
+    @include mobile {
         img {
             border-radius: 10px;
         }
